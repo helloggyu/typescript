@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "allowJs":true,//js 허용 여부
+    "checkJs": true,//@ts-check
+    "noImplicitAny":true//타입 넣어주기
+  }
+}
