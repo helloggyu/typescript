@@ -3,10 +3,10 @@ interface Todo {
   title: string;
   done: boolean;
 }
-let todoItems: { id: number; title: string; done: boolean }[];
+let todoItems: Todo[];
 
 // api
-function fetchTodoItems(): object[] {
+function fetchTodoItems(): Todo[] {
   const todos = [
     { id: 1, title: '안녕', done: false },
     { id: 2, title: '타입', done: false },
@@ -16,7 +16,7 @@ function fetchTodoItems(): object[] {
 }
 
 // crud methods
-function fetchTodos(): object[] {
+function fetchTodos(): Todo[] {
   const todos = fetchTodoItems();
   return todos;
 }
@@ -29,10 +29,7 @@ function deleteTodo(index: number): void {
   todoItems.splice(index, 1);
 }
 
-function completeTodo(
-  index: number,
-  todo: { id: number; title: string; done: boolean }
-): void {
+function completeTodo(index: number, todo: Todo): void {
   todo.done = true;
   todoItems.splice(index, 1, todo);
 }
@@ -47,8 +44,9 @@ function showCompleted(): object[] {
 }
 
 // TODO: 아래 함수의 내용을 채워보세요. 아래 함수는 `addTodo()` 함수를 이용하여 2개의 새 할 일을 추가하는 함수입니다.
-function addTwoTodoItems(todoItems: object[]): void {
-  //  / addTodo(todoItems);
+function addTwoTodoItems(): void {
+  addTodo({ id: 4, title: '스크립트', done: false });
+  addTodo({ id: 5, title: '스크립트', done: false });
   // 함수를 두 번 호출하여 todoItems에 새 할 일이 2개 추가되어야 합니다.
 }
 
