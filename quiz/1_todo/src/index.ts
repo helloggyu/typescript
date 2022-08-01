@@ -4,7 +4,7 @@ interface Todo {
   done: boolean;
 }
 let todoItems: Todo[];
-
+let test: any = 'hi';
 // api
 function fetchTodoItems(): Todo[] {
   const todos = [
