@@ -9,7 +9,11 @@ var seho: User={
 }
 
 //함수에 인터페이스 활용
-function getUser(user:User){
+// function getUser(user:User){
+//   console.log(user);
+// }
+
+const getUser=(user:User)=>{
   console.log(user);
 }
 
@@ -58,10 +62,10 @@ const obj:StringRegexDictionary={
 
 
 //인터페이스 확장(상속)
-interface Person {
-  name:string;
-  age:number;
-}
+// interface Person {
+//   name:string;
+//   age:number;
+// }
 
 // interface Developer {
 //   name:string;
