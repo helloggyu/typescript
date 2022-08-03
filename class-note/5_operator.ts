@@ -30,3 +30,17 @@ function logMessage(value: string|number){
 }
 
 // logMessage('hello');
+
+interface Person{
+  name: string;
+  age: number
+}
+
+interface Developer{
+  name: string;
+  skill: string;
+}
+
+function askSomeone(someone: Developer | Person){
+  someone.skill
+}
