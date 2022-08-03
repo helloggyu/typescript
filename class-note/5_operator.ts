@@ -30,3 +30,37 @@ function logMessage(value: string|number){
 }
 
 // logMessage('hello');
+
+interface Person1{
+  name: string;
+  age: number
+}
+
+interface Developer1{
+  name: string;
+  skill: string;
+}
+//공통된 속성에 대해서만 제공 보장된 속성에 대해서만 제공
+function askSomeone(someone: Developer1 | Person1){
+  someone.name
+  someone.age
+  someone.skill
+}
+
+askSomeone({name:'디벨로퍼', skill:'웹개발'});
+askSomeone({name:'캡틴', age:100});
+
+// 타입가드에 대한 추가처리가 필요한 반면에, 
+// 인터섹션: &연산자로 타입을 연결
+var capt1: string & number & boolean;
+
+
+function askSomeone1(someone: Developer1 & Person1){
+  someone.name
+  someone.age
+  someone.skill
+}
+
+askSomeone1({name:'디벨로퍼', skill:'웹개발',age:10});
+askSomeone1({name:'캡틴', age:100});
+
