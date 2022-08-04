@@ -15,8 +15,8 @@ const person1: Person={
   age:30
 }
 
-type Mystring=string;
-const str:Mystring='hello';
+type String=string;
+const str:String='ggyu';
 
 type Todo ={id: string, title: string, done:boolean}
 
