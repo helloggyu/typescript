@@ -64,3 +64,7 @@ function askSomeone1(someone: Developer1 & Person1){
 askSomeone1({name:'디벨로퍼', skill:'웹개발',age:10});
 askSomeone1({name:'캡틴', age:100});
 
+
+
+
+
