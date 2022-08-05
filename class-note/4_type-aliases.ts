@@ -15,12 +15,14 @@ const person1: Person={
   age:30
 }
 
-type String=string;
-const str:String='ggyu';
+type StringType = string;
+const str:StringType = 'ggyu';
 
 type Todo ={id: string, title: string, done:boolean}
 
-const getTodo=(todo:Todo)=>{}
+const getTodo=(todo:Todo)=>{
+  
+}
 
 
 //타입과 인터페이스의 차이

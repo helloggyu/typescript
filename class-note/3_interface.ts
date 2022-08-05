@@ -62,16 +62,16 @@ const obj:StringRegexDictionary={
 
 
 //인터페이스 확장(상속)
-// interface Person {
-//   name:string;
-//   age:number;
-// }
+interface Person {
+  name:string;
+  age:number;
+}
 
-// interface Developer {
-//   name:string;
-//   age:number;
-//   language: string;
-// }
+interface Developer {
+  name:string;
+  age:number;
+  language: string;
+}
 
 interface Developer extends Person{
   language: string;
